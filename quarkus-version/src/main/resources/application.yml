@@ -1,0 +1,13 @@
+
+
+quarkus:
+  datasource:
+    db-kind: mysql
+    username: mybatis_plus_native_demo
+    password: x_q3WjlZ7t_1JjHv
+    jdbc:
+      url: jdbc:mysql://192.168.0.102:3306/mybatis_plus_native_demo?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+  mybatis:
+    map-underscore-to-camel-case: true
+  http:
+    port: 22345

@@ -1,23 +1,25 @@
 ***
 
-# 结论先行
-**不推荐用于生产环境！！！**
+# 一、结论先行
+**基于 SpringBoot 的 Web 项目不推荐将 GraalVM native image 用于生产环境！！！**
 
-**不推荐用于生产环境！！！**
+**基于 SpringBoot 的 Web 项目不推荐将 GraalVM native image 用于生产环境！！！**
 
-**不推荐用于生产环境！！！**
-
-***
-
-# 目录说明
-
-error-version：在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行异常
-
-right-version：在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行也正常
+**基于 SpringBoot 的 Web 项目不推荐将 GraalVM native image 用于生产环境！！！**
 
 ***
 
-# 运行项目
+# 二、目录说明
+
+error-version：基于 SpringBoot，在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行异常
+
+right-version：基于 SpringBoot，在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行也正常
+
+quarkus-version：基于 quarkus，在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行也正常
+
+***
+
+# 三、运行项目（基于 SpringBoot）
 
 1. 前置依赖：[GraalVM 21 环境](https://www.graalvm.org/latest/reference-manual/native-image/#prerequisites)、Java 21、MySQL 8.0。
 2. 使用 MySQL 8.0 的 root 用户登录
@@ -50,6 +52,17 @@ CREATE TABLE `sys_tenant` (
 
 4. 在官方指定的命令行工具（比如 Windows 10 下需要使用 x64 Native Tools Command Prompt for VS 2022）中，进入 right-version 或 error-version 文件夹，然后执行以下命令：mvnw -Pnative clean native:compile
 5. 如果顺利的话，就可以在 target 文件夹下看到 mybatis-plus-native-demo.exe 文件了。
+
+***
+
+# 四、运行项目（基于 Quarkus）
+
+1. 前三点与『三、运行项目（基于 SpringBoot）』的前三点相同。
+2. 前三点与『三、运行项目（基于 SpringBoot）』的前三点相同。
+3. 前三点与『三、运行项目（基于 SpringBoot）』的前三点相同。
+4. 安装 [quarkus](https://quarkus.io/) 。
+5. 使用 cmd ，进入 quarkus-version 文件夹，执行：quarkus build --native
+6. 如果顺利的话，就可以在 target 文件夹下看到 
 
 ***
 
