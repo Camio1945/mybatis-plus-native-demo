@@ -13,6 +13,8 @@
 
 error-version：基于 SpringBoot，在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行异常
 
+error-fixed-version：基于 SpringBoot，在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行也正常
+
 right-version：基于 SpringBoot，在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行也正常
 
 quarkus-version：基于 quarkus，在 IDE 中运行正常，使用 GraalVM native image 打成二进制包之后运行也正常
